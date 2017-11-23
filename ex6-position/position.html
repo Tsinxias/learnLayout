@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>p7 position</title>
+</head>
+<body>
+  <style>
+    .border {
+      border: 5px solid tomato;
+    }
+    .static {
+      posittion: static;
+    }
+/*relative*/
+    .relative1 {
+      position: relative;
+    }
+
+    .relative2 {
+      position: relative;
+      top: -20px;
+      left: 20px;
+      background-color: lightgrey;
+      width: 500px;
+      padding-bottom: 100px;
+    }
+/*fixed*/
+    .fixed {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 200px;
+      background-color: yellow;
+    }
+/*relative vs absolute*/
+    .relative {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      border: 5px solid tomato;
+      margin-top: 100px;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 120px;
+      right: 0;
+      width: 300px;
+      height: 200px;
+      border: 10px solid blue;
+    }
+  </style>
+  <div class="border" class="static">
+    <p>static is the default value. An element with position: static; is not positioned in any special way. A static element is said to be not positioned and an element with its position set to anything else is said to be positioned.</p>
+  </div>
+<!--relative-->
+  <div class="border" class="relative1">
+    <p>relative behaves the same as static unless you add some extra properties.</p>
+  </div>
+  <div class="relative2">
+      <p>Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.</p>
+  </div>
+<!--fixed-->
+  <div class="fixed">
+    <p>A fixed element is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. As with relative, the top, right, bottom, and left properties are used.</p>
+    <p>A fixed element does not leave a gap in the page where it would normally have been located.</p>
+  </div>
+<!--Absolute vs relative-->
+  <div class="relative">
+    <p>This element is relatively-positioned. If this element was position: static; its absolutely-positioned child would escape and would be positioned relative to the document body.</p>
+    <div class="absolute">
+      <p>This element is absolutely-positioned. It's positioned relative to its parent.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>p18-flexbox</title>
+</head>
+<body>
+  <style media="screen">
+/*easy layout*/
+    .container {
+      display: -webkit-flex;
+      display: flex;
+      border: 2px solid blue;
+    }
+
+    nav {
+      width: 200px;
+      border: 2px solid pink;
+    }
+
+    .flex-column {
+      -webkit-flex:1;
+      -flex: 1;
+    }
+    section {
+      border: 2px solid yellow;
+    }
+/*Fancy layout*/
+    .container2 {
+      display: -webkit-flex;
+      display: flex;
+      border: 2px solid pink;
+    }
+
+    .initial {
+      -webkit-flex: initial;
+      flex: initial;
+      width: 200px;
+      min-width: 100px;
+      border: 2px solid yellow;
+    }
+    .none {
+      -webkit-flex: none;
+      flex: none;
+      width: 200px;
+      border: 2px solid yellow;
+    }
+    .flex1 {
+      -webkit-flex: 1;
+      flex: 1;
+      border: 2px solid yellow;
+    }
+    .flex2 {
+      -webkit-flex: 2;
+      flex: 2;
+      border: 2px solid yellow;
+    }
+/*centering using flexbox*/
+    .vertical-container {
+      height: 300px;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      border: 3px solid pink;
+    }
+  </style>
+<!--Simple layout-->
+  <div class="container">
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Taco Menu</li>
+        <li>Draft List</li>
+        <li>Hours</li>
+        <li>Directions</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <div class="flex-column">
+      <section>
+        <p>Flexbox is easy</p>
+      </section>
+      <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+      </section>
+    </div>
+  </div>
+<!--Fancy layout-->
+  <div class="container2">
+    <div class="initial">
+      <p>I will be 200px when there is room, and I will shrink down to 100px if there is not room, but no smaller.</p>
+    </div>
+    <div class="none">
+      <p>I will always be 200px, no matter what.</p>
+    </div>
+    <div class="flex1">
+      <p>up 1/3 of the remaining width.</p>
+    </div>
+    <div class="flex2">
+      <p>I will fill up 2/3 of the remaining width.</p>
+    </div>
+  </div>
+<!--Centering using flexbox-->
+  <div class="vertical-container">
+    <div>
+      <p>Finally, it's easy to vertically center something in CSS!</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>p10-clear</title>
+</head>
+<body>
+  <style media="screen">
+/*example1*/
+    .box {
+      border: 3px solid purple;
+      float: left
+
+    }
+
+    section {
+      border: 3px solid red;
+    }
+
+/*example2*/
+    .box1 {
+      border: 3px solid blue;
+      float: left;
+      width: 200px;
+      height: 100px;
+      margin: 1em;
+    }
+    .after-box {
+      clear: left;
+    }
+
+  </style>
+<!--Example1-->
+  <div class="box">
+    <p>I feel like I'm floating!</p>
+  </div>
+  <section>
+    <p>In this case, the section element is actually after the div. However, since the div is floated to the left, this is what happens: the text in the section is floated around the div and the section surrounds the whole thing. What if we wanted the section to actually appear after the floated element?</p>
+  </section>
+<!--example2-->
+  <div class="box1">
+    <p>I feel like I'm floating!</p>
+  </div>
+  <section class="after-box">
+    <p>Using clear we have now moved this section down below the floated div. You use the value left to clear elements floated to the left. You can also clear right and both.</p>
+  </section1>
+</body>
+</html>

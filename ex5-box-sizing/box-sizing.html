@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>p6-box sizing</title>
+</head>
+<body>
+  <style media="screen">
+    .simple {
+      width: 500px;
+      margin: 20px auto;
+      -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+          box-sizing: border-box;
+      border: solid blue 10px;
+    }
+
+    .fancy {
+      width: 500px;
+      margin: 20px auto;
+      padding: 50px;
+      border: solid blue 10px;
+      -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+          box-sizing: border-box;
+    }
+  </style>
+<!--See ex4-box-model-->
+  <div class="simple">
+    <p>I'm like this now</p>
+  </div>
+  <div class="fancy">
+    <p>Me too yaaaay :D</p>
+  </div>
+</body>
+</html>

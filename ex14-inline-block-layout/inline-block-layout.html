@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>p16-inline-block layout</title>
+</head>
+<body>
+  <style media="screen">
+    nav {
+      display: inline-block;
+      vertical-align: top;
+      width: 25%;
+      border: 2px solid pink;
+      box-sizing: border-box;
+    }
+
+    .column {
+      display: inline-block;
+      vertical-align: top;
+      width: 75%;
+      box-sizing: border-box;
+    }
+
+    section {
+      border: 2px solid yellow;
+      box-sizing: border-box;
+    }
+
+    .container {
+      border: 2px solid blue;
+    }
+
+  </style>
+  <div class="container">
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Taco Menu</li>
+        <li>Draft List</li>
+        <li>Hours</li>
+        <li>Directions</li>
+        <li>Contact</li>
+      </ul>
+    </nav><div class="column">
+      <section>
+        <p>Inline-block elements are affected by the vertical-align property, which you probably want set to top. You need to set the width of each column. There will be a gap between the columns if there is any whitespace between them in the HTML.</p>
+      </section>
+      <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>p15-inline-block</title>
+</head>
+<body>
+  <style media="screen">
+/*using float - hard*/
+    .box {
+      float: left;
+      width: 200px;
+      height: 100px;
+      margin: 1em;
+      border: 2px solid pink;
+    }
+    .after-box {
+      clear: left;
+      border: 2px solid tomato;
+    }
+/*using inline-block - easy*/
+    .box2 {
+      display: inline-block;
+      width: 200px;
+      height: 100px;
+      margin: 1em;
+      border: 2px solid green;
+    }
+    .border {
+      border: 2px solid brown;
+    }
+
+
+  </style>
+<!--float method - hard-->
+  <div class="box">
+    <p>I'm floating!</p>
+  </div>
+  <div class="box">
+    <p>I'm floating!</p>
+  </div>
+  <div class="box">
+    <p>I'm floating!</p>
+  </div>
+  <div class="box">
+    <p>I'm floating!</p>
+  </div>
+  <div class="box">
+    <p>I'm floating!</p>
+  </div>
+  <div class="box">
+    <p>I'm floating!</p>
+  </div>
+  <div class="box">
+    <p>I'm floating!</p>
+  </div>
+  <div class="box">
+    <p>I'm floating!</p>
+  </div>
+  <div class="box">
+    <p>I'm floating!</p>
+  </div>
+  <div class="box">
+    <p>I'm floating!</p>
+  </div>
+  <div class="box">
+    <p>I'm floating!</p>
+  </div>
+  <div class="after-box">
+    <p>I'm using clear so I don't float next to the above boxes</p>
+  </div>
+
+<!--inline-block method - easy-->
+  <div class="box2">
+    <p>I'm an inline block!</p>
+  </div>
+  <div class="box2">
+    <p>I'm an inline block!</p>
+  </div>
+  <div class="box2">
+    <p>I'm an inline block!</p>
+  </div>
+  <div class="box2">
+    <p>I'm an inline block!</p>
+  </div>
+  <div class="box2">
+    <p>I'm an inline block!</p>
+  </div>
+  <div class="box2">
+    <p>I'm an inline block!</p>
+  </div>
+  <div class="box2">
+    <p>I'm an inline block!</p>
+  </div>
+  <div class="box2">
+    <p>I'm an inline block!</p>
+  </div>
+  <div class="box2">
+    <p>I'm an inline block!</p>
+  </div>
+  <div class="box2">
+    <p>I'm an inline block!</p>
+  </div>
+  <div class="box2">
+    <p>I'm an inline block!</p>
+  </div>
+  <div class="border">
+    <p>I don't have to use clear in this case. Nice</p>
+  </div>
+
+</body>
+</html>

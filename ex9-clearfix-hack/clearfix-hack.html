@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>p11-clearfix hack</title>
+</head>
+<body>
+  <style media="screen">
+    img {
+      float: right;
+    }
+
+    .clearfix{
+      border: 3px solid tomato;
+/*if you delete overflow:auto, the problem appears*/
+      overflow: auto;
+/*add zoom:1 if older browser*/
+      zoom: 1;
+    }
+
+
+  </style>
+  <div class="clearfix">
+    <img src="http://ekladata.com/Kx8uxZVIZpGbYqxDcH1UQH35o9s.jpg" alt="">
+    <p>Uh oh... this image is taller than the element containing it, and it's floated, so it's overflowing outside of its container!</p>
+  </div>
+</body>
+</html>

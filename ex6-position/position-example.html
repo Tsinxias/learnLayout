@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>p8-position example</title>
+</head>
+<body>
+  <style media="screen">
+    .container {
+      position: relative;
+      border: 3px solid blue;
+    }
+
+    nav {
+      position: absolute;
+      left: 0px;
+      width: 190px;
+      border: 3px solid pink;
+    }
+
+    section {
+/*position is static by defauly*/
+      margin-left: 200px;
+      border: 3px solid yellow;
+      padding: 10px;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      height: 70px;
+      background-color: lightgrey;
+      width: 100%;
+      text-align: center;
+      border: 3px solid green;
+    }
+
+    body {
+      margin-bottom: 120px;
+    }
+
+  </style>
+  <div class="container">
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Taco Menu</li>
+        <li>Draft List</li>
+        <li>Hours</li>
+        <li>Directions</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <section>
+      <p>The margin-left style for sections makes sure there is room for the nav. Otherwise the absolute and static elements would overlap</p>
+    </section>
+    <section>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In mollitia hic voluptatem similique animi perferendis cupiditate soluta natus assumenda voluptatibus beatae facere, quasi. Similique enim iure, eius repudiandae amet magnam!</p>
+    </section>
+    <section>
+      <p>Notice what happens when you resize your browser. It works nicely!</p>
+    </section>
+    <footer>
+      <p>If you use a fixed header or footer, make sure there is room for it! I put a margin-bottom on the body.</p>
+    </footer>
+
+  </div>
+</body>
+</html>

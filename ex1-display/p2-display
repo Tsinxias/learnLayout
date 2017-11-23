@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>p2-display</title>
+</head>
+<body>
+  <style media="screen">
+    p {
+      text-align: center;
+    }
+    form {
+      text-align: right;
+    }
+    header, footer, section {
+      border: 3px solid black;
+    }
+    span {
+      color: red;
+    }
+  </style>
+<!--Blocks-->
+  <div>
+    <p>1er block</p>
+  </div>
+  <form action="">2ème block</form>
+  <header>
+    <p>Header</p>
+  </header>
+  <footer>
+    <p>Footer</p>
+  </footer>
+  <Section>
+    <p>Section</p>
+  </Section>
+<!--Inline = span-->
+  <div>
+    <p>Hello world <span>How are you ?</span></p>
+    <span>How are you ?</span>
+    <p>Lorem ipsum dolor sit amet, <span>consectetur adipisicing elit.</span> Vel quos assumenda debitis deleniti quibusdam facere sint iure beatae doloribus quo recusandae magnam incidunt nisi blanditiis dolore porro sequi, velit aspernatur!</p>
+  </div>
+</body>
+</html>
